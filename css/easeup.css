@@ -1,0 +1,78 @@
+/*
+                                ,                    
+___   _____   _     _  _   _     __   _              
+// (_(_)/ (__(/_  _(/_(_(_/_)__(_/ (_(_/_ o   o   o  
+                                    .-/              
+                                   (_/               
+*/
+
+/* I turned off this stylesheet but kept it to 
+show the easing. while it provided a really cool 
+transition effect, it did not want to play nice 
+with the slideshow. The result was a slideshow 
+that was out of sync with the rest of the layout
+in terms of width as it transitioned to the next 
+slide... fixes are welcome!*/
+
+
+/*styles for 480px and up!*/
+@media only screen and (min-width: 480px), only screen and (max-width: 620px) {
+	body {
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+	}
+
+}
+
+/*styles for 620px and up!*/
+@media screen and (min-width: 620px),only print,projector{
+	body{
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+	}
+
+/*styles for 800px and up!*/
+@media screen and (min-width: 800px){
+	body {
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+	}
+
+	#maintext_nav {
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+	}
+	
+}
+
+/*styles for 1000px and up!*/
+@media screen and (min-width: 1000px){
+	body {
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+	}
+
+}
+
+/*styles for 1300px and up!*/
+@media screen and (min-width: 1300px){
+	body {
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+	}
+}
+
+/*styles for 1600px and up!*/
+@media screen and (min-width: 1600px){
+	body {
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+	}
+}

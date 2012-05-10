@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--
+
+ ____    __  __  ______  ____    __     
+/\  _`\ /\ \/\ \/\  _  \/\  _`\ /\ \    
+\ \,\L\_\ \ `\\ \ \ \L\ \ \ \L\ \ \ \   
+ \/_\__ \\ \ , ` \ \  __ \ \ ,__/\ \ \  
+   /\ \L\ \ \ \`\ \ \ \/\ \ \ \/  \ \_\ 
+   \ `\____\ \_\ \_\ \_\ \_\ \_\   \/\_\
+    \/_____/\/_/\/_/\/_/\/_/\/_/    \/_/
+                                                                                                             
+                                    ,            /)                  
+ _     __   _  _  __   _____   _     _ _   _    // _       ___   _/_ 
+(_(_  / (__(/_/_)_/_)_(_) / (_/_)__(_(/___(/_  (/_(_(_(_/_(_)(_(_(__ 
+               .-/                                   .-/             
+              (_/                                   (_/              
+-->
+
+	<title>Snap! A rich, responsive and modern web template</title>
+
+<!--
+                     ,     /)   
+ __     _ _/_ _       __  // ___
+// (__(/_(__(_(_  _(_/ (_/(_(_) 
+                        /)      
+                       (/       
+-->
+	
+	<meta name="description" content="Snap! is an html5 layout demo that combines many of the features contained in modern web design... for now at least (cerca Sep 2011). Source is available on Github." /> 
+	<meta name="keywords" content="html5, css3, jquery, snap, design, user, experience, layout, web, templates, nick cottrell, cottrell" /> 
+	<meta name="author" content="Nick Cottrell, Brand Experience Designer" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<!--
+              ,                    /)              /)   
+  _   _  __    __  _/_   _  __   _(/    _  _/_    //  _ 
+/_)_(__/ (__(_/_)_(__  (_(_/ (_(_(_   /_)_(__(_/_(/__(/_
+           .-/                              .-/         
+          (_/                              (_/
+-->
+	
+	<link href="css/normalize.css" rel="stylesheet"/>
+	<link href="css/screen.css" rel="stylesheet"/>
+	<link href="css/screen_600_plus.css" media="screen and (min-width: 600px)" rel="stylesheet"/>
+	<!--<link href="css/easeup.css" rel="stylesheet"/> removed easing because of buggy shit-->
+	
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="js/respond.src.js"></script>
+	<script src="js/jquery-1.5.1.js"></script>
+	<script src="js/jq-ui/jquery.ui.core.js"></script>
+	<script src="js/jq-ui/jquery.ui.widget.js"></script>
+	<script src="js/jq-ui/jquery.ui.accordion.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	
+	<script>
+	$(function() {
+		$( "#accordion" ).accordion({
+			collapsible: true, 
+    		autoHeight: false, 
+    		active: false 
+		});
+	});
+	</script>
+	
+	<script type="text/javascript">
+	var myScroll;
+
+	function loaded() {
+		myScroll = new iScroll('wrapper', {
+			snap: true,
+			momentum: false,
+			hScrollbar: false,
+			onScrollEnd: function () {
+				document.querySelector('#indicator > li.active').className = '';
+				document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+				}
+	 		});
+		}
+		document.addEventListener('DOMContentLoaded', loaded, false);
+	</script>
+
+</head> 
+<body>
+	
+	
+<!--
+
+ /)            /)       
+(/    _  _   _(/  _  __ 
+/ )__(/_(_(_(_(__(/_/ (_
+
+-->
+	
+<header>
+	<h1>Snap!</h1>
+	<h2>A rich, responsive and modern web template</h2>
+</header>
+	
+<div id="not-small-screen"><p>Speaking of responsive layout, this box won't appear in the mobile context (beyond 600px wide).</p></div>
+
+<!--                                            
+           ,                                
+___   _     __     _  _____  _/_  _ __  _/_ 
+// (_(_(__(_/ (_  (__(_) / (_(___(/_/ (_(__ 
+                                            
+-->                                            
+
+<div id="main_content">
+	<div id="maintext">
+		<div id="maintext_content">
+			<p>Good design is supposed to be flexible. You can't force-fit a single design into a variety of formats. For too long, web design has been an extension of print design, hence antiquated terms we use every day such as 'web page.' At this point, the web is ready for a better design. Something that snaps into place depending on its context.</p>
+			<p>Until now, many designs started off with constrained proportions... with a designer laying out a <em>page</em>, as though it was going to be printed and cut to a particular size. For the web, that's the wrong approach. Designs should be gooey forms that melt into whichever format they are viewed. They should be thought of as a moldable cluster of information, with variables and tolerances built to mesh with different formats and devices.</p>
+			<p>This layout is an example of such a form. Snap! is a template, designed to demonstrate how layouts can transform depending on the format, size and device type. Hopefully you can imagine how this type of layout can work its way into many different applications. Please take look. Re-size it. Stretch it. View the source. Kick the tires...</p>				
+		</div><!--end #maintext_content-->
+
+<!--
+               ,             ,        
+ __   _  _ _     _   _  _/_    _____  
+/ (_(_(_(/___(_(_/_(_(_(___(_(_) / (_
+              .-/                    
+             (_/                     
+-->
+
+		<div id="maintext_nav">
+			<div id="accordion">
+				<h3><a href="#">Snap to size</a></h3>
+				<div>
+					<p>This layout is designed to snap to different window sizes, which ultimately provides context for different devices. The snap points are at:</p>
+					<ul>
+						<li>480px</li>
+						<li>620px</li>
+						<li>800px</li>
+						<li>1000px</li>
+						<li>1300px</li>
+						<li>1600px</li>
+					</ul>
+					<p>Although the snap points are specifically meant to provide context for specific mobile devices and tablets, you can experience the various views by re-sizing your browser window. No need to be diverted to a separate 'mobile site.'</p>
+					<p>This layout is based this <a href="https://github.com/scottjehl/Respond">demo</a>.</p>
+				</div>
+				<h3><a href="#">Exclude elements</a></h3>
+				<div>
+					<p>If you are viewing this page in a screen context larger than 600px, you'll see a black bar toward the top of the screen, below the header. If you're viewing this with a device that's below 600px, fugedaboudit...</p>
+				</div>
+				<h3><a href="#">Touch and slide</a></h3>
+				<div>
+					<p>This layout also features JavaScript called iscroll.js that mimics iOS style behaviors, powering the slide show below, and is compatible with iOS touch devices and even the multi-touch features on the MacBook track pad. I didn't write the script. <a href="https://github.com/cubiq">This guy</a> did. Awesome work.</p>
+					<p>The sidebar menu is powered by <a href="https://github.com/jquery/jquery-ui/blob/master/demos/accordion/index.html">jQuery-ui</a>.</p>
+				</div>
+				<h3><a href="#">Ease up</a></h3>
+				<div>
+					<p>In the spirit of HTML5 and CSS3, this layout uses features such as round corners, shadows, and animated transitional easing, all independent of the structural markup... and images. I also used '<a href="https://github.com/jonathantneal/normalize.css">normalize.css</a>' as a reset.</p>
+				</div>
+				<h3><a href="#">Learn more</a></h3>
+				<div>
+					<p>Like I mentioned before, this piece started off with a lot of great individual elements. I just stitched it together. In many ways, that's what web design is these days. A front-end developer must scour the internet for scripts and engines used to power the features they want to use to enhance the design. Here's some info that I found useful during this project:</p>
+					<ul>
+						<li><a href="http://www.alistapart.com/articles/responsive-web-design/">Original "Responsive Web Design" Article</a></li>
+						<li><a href="https://github.com/scottjehl/Respond">Responsive script</a></li>
+						<li><a href="https://github.com/jonathantneal/normalize.css">CSS reset</a></li>
+						<li><a href="https://github.com/cubiq">iOS style behaviors</a></li>
+						<li><a href="http://www.css3.info/">CSS3 goodies</a></li>
+						<li><a href="https://github.com/nickcottrell/nickcottrell.github.com/tree/master/lab/templates/snap">Source for this layout</a></li>
+				</div>
+			</div><!--end #accordion-->
+		</div><!--end #maintext_nav-->
+	</div><!--end #maintext-->
+
+<!--
+      /) ,   /)       
+ _   //    _(/  _  __ 
+/_)_(/__(_(_(__(/_/ (_
+                      
+-->	
+	
+	<div id="slider">
+		<div id="wrapper">
+			<div id="scroller">
+				<ul id="thelist">
+					<li><h3>&#8220;For too long, web design has been an extension of print design, hence antiquated terms such as 'web page.'&#8221;</h3></li>
+					<li><h3>&#8220;Designs should be gooey forms that melt into whichever format they are viewed.&#8221;</h3></li>
+					<li><h3>&#8220;At this point, the web is ready for a better design. Something that snaps into place depending on its context.&#8221;</h3></li>
+					<li><h3>&#8220;Snap! is a template, designed to demonstrate how layouts can transform depending on the format, size and device type.&#8221;</h3></li>
+					<li><h3>&#8220;Although the snap points are specifically meant to provide context for specific mobile devices and tablets, you can experience the various views by re-sizing your browser window.&#8221;</h3></li>
+					<li><h3>&#8220;In the spirit of HTML5 and CSS3, this layout uses features such as round corners, shadows, and animated transitional easing, all independent of the structural markup... and images.&#8221;</h3></li>
+					<li><h3>&#8220;Please take look. Re-size it. Stretch it. View the source. Kick the tires...&#8221;</h3></li>
+				</ul>
+			</div><!--end #scroller-->
+		</div><!--end #wrapper-->
+		
+		<div id="slider_nav">
+			<a href id="prev" onclick="myScroll.scrollToPage('prev', 0);return false">prev</a>
+			<a href id="next" onclick="myScroll.scrollToPage('next', 0);return false">next</a>
+			<ul id="indicator">
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+			</ul>
+		</div><!--end #slider_nav-->
+	</div><!--end #slider-->
+	
+</div><!--end #main_content-->
+
+<!--
+    /)                 
+   // _______/_  _  __ 
+  /(_(_)(_) (___(/_/ (_
+ /)                    
+(/                     
+
+-->
+
+<footer>
+	<p>For more on responsive layouts and media queries, read <a href="http://www.alistapart.com/articles/responsive-web-design/">Responsive Web Design</a>. Check this out on <a href="https://github.com/nickcottrell/nickcottrell.github.com/tree/master/lab/templates/snap">Github</a>.</p>
+</footer>
+	
+</body>
+</html>

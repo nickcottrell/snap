@@ -1,0 +1,94 @@
+/*
+.__   __.   ______   .___________.    _______   ______   .______      
+|  \ |  |  /  __  \  |           |   |   ____| /  __  \  |   _  \     
+|   \|  | |  |  |  | `---|  |----`   |  |__   |  |  |  | |  |_)  |    
+|  . `  | |  |  |  |     |  |        |   __|  |  |  |  | |      /     
+|  |\   | |  `--'  |     |  |        |  |     |  `--'  | |  |\  \----.
+|__| \__|  \______/      |__|        |__|      \______/  | _| `._____|
+                                                                      
+.___________. __    __   _______ 
+|           ||  |  |  | |   ____|
+`---|  |----`|  |__|  | |  |__   
+    |  |     |   __   | |   __|  
+    |  |     |  |  |  | |  |____ 
+    |__|     |__|  |__| |_______|
+                                 
+     _______..___  ___.      ___       __       __      
+    /       ||   \/   |     /   \     |  |     |  |     
+   |   (----`|  \  /  |    /  ^  \    |  |     |  |     
+    \   \    |  |\/|  |   /  /_\  \   |  |     |  |     
+.----)   |   |  |  |  |  /  _____  \  |  `----.|  `----.
+|_______/    |__|  |__| /__/     \__\ |_______||_______|
+                                                        
+     _______.  ______ .______       _______  _______ .__   __. 
+    /       | /      ||   _  \     |   ____||   ____||  \ |  | 
+   |   (----`|  ,----'|  |_)  |    |  |__   |  |__   |   \|  | 
+    \   \    |  |     |      /     |   __|  |   __|  |  . `  | 
+.----)   |   |  `----.|  |\  \----.|  |____ |  |____ |  |\   | 
+|_______/     \______|| _| `._____||_______||_______||__| \__| 
+                                                               
+
+this stylesheet was referenced via a link that had a media attr defined
+it should only apply on screen > 600px */
+
+#slider {
+	display: block;
+	height:400px;
+}
+
+
+#not-small-screen {
+	display: block;
+	color: #ffffff;
+	background: #000000;
+	margin-bottom:10px;
+	padding:10px 0 10px 0;
+
+	-webkit-border-top-left-radius:8px;
+	-webkit-border-top-right-radius:8px;
+	-webkit-border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+	
+	-khtml-border-top-left-radius:8px;
+	-khtml-border-top-right-radius:8px;
+	-khtml-border-bottom-right-radius:8px;
+	-khtml-border-bottom-left-radius:8px;
+	
+	-moz-border-top-left-radius:8px;
+	-moz-border-top-right-radius:8px;
+	-moz-border-bottom-right-radius:8px;
+	-moz-border-bottom-left-radius:8px;
+	
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-right-radius:8px;
+	border-bottom-left-radius:8px;
+
+}
+
+/*styles for 800px and up!
+---------------------------------------------*/
+@media screen and (min-width: 800px){
+
+#not-small-screen {
+	-webkit-border-top-left-radius:0;
+	-webkit-border-top-right-radius:8px;
+	-webkit-border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:0;
+	
+	-khtml-border-top-left-radius:0;
+	-khtml-border-top-right-radius:8px;
+	-khtml-border-bottom-right-radius:8px;
+	-khtml-border-bottom-left-radius:0;
+	
+	-moz-border-top-left-radius:0;
+	-moz-border-top-right-radius:8px;
+	-moz-border-bottom-right-radius:8px;
+	-moz-border-bottom-left-radius:0;
+	
+	border-top-left-radius:0;
+	border-top-right-radius:8px;
+	border-bottom-right-radius:8px;
+	border-bottom-left-radius:0;
+	}
+}
