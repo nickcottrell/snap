@@ -1,4 +1,3 @@
-
  ____    __  __  ______  ____    __     
 /\  _`\ /\ \/\ \/\  _  \/\  _`\ /\ \    
 \ \,\L\_\ \ `\\ \ \ \L\ \ \ \L\ \ \ \   
@@ -21,9 +20,9 @@ I stitched this piece together so I would have a concise template that contains 
 * slide menus, scrolls, and touch support
 * css3 features such as easing and shadows
 
-View the demo: http://nickcottrell.github.com/lab/templates/snap/
+View the demo: http://istitch.net/snap/
 
-Check out the resources and scripts I used for more information. These dudes are badass:
+Check out the resources and scripts I used for more information:
 
 http://www.alistapart.com/articles/responsive-web-design/
 https://github.com/scottjehl/Respond
